@@ -1,5 +1,11 @@
 const emoji = require('node-emoji');
 
-for (i = 0; i < 10; i++){
-  console.log(emoji.random());
+
+let newArray = [emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random(), emoji.random()];
+
+function loopArray (array){
+  for (i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
 }
+loopArray(newArray);
